@@ -10,6 +10,12 @@ class AppTest {
 
     @Test
     void loopNumbers() {
+
+        String expected = "i = 1\n" +
+                "i = 2\n" +
+                "i = 3\n";
+
+        assertEquals(expected,App.loopNumbers(3));
     }
 
     @Test

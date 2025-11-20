@@ -11,12 +11,14 @@ public class App {
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.println("Hello and welcome!");
 
-        loopNumbers(askAmount(input));
+        System.out.println(loopNumbers(askAmount(input)));
     }
-    public static void loopNumbers(int loopAmount){
+    public static String loopNumbers(int loopAmount){
+        StringBuilder sb = new StringBuilder();
         for (int i = 1; i <= loopAmount; i++) {
-            System.out.println("i = " + i);
+            sb.append("i = ").append(i).append("\n");
         }
+        return sb.toString();
     }
     public static int askAmount(Scanner scanner){
         System.out.println("how many numbers to display in the loops?");
