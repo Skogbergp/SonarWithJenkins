@@ -7,7 +7,7 @@ pipeline {
     environment {
      PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
            JAVA_HOME = 'C:\\Program Files\\Java\\jdk-21'  // Adjust to your actual JDK pat
-        SONARQUBE_SERVER = 'SonarQubeServer'  // The name of the SonarQube server configured in Jenkins
+        SONARQUBE_SERVER = 'SonarScanner'  // The name of the SonarQube server configured in Jenkins
         SONAR_TOKEN = 'sqa_9c90270431175914b3670aace8f7d44246c74e4a' // Store the token securely
         DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
         DOCKERHUB_REPO = 'hatrik/sonarqubewithjenkins'
